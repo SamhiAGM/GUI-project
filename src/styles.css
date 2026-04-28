@@ -1,8 +1,46 @@
 :root {
   color-scheme: dark;
   font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  background: #0f172a;
-  color: #e2e8f0;
+  --bg: #0f172a;
+  --bg-shade: #020617;
+  --surface: rgba(15, 23, 42, 0.9);
+  --surface-strong: #020617;
+  --surface-card: rgba(248, 249, 250, 0.12);
+  --text: #e2e8f0;
+  --muted: #94a3b8;
+  --accent: #7dd3fc;
+  --accent-strong: #38bdf8;
+  --price: #f59e0b;
+  --button-bg: #7dd3fc;
+  --button-text: #0f172a;
+  --input-bg: #020617;
+  --input-border: rgba(148, 163, 184, 0.16);
+  --search-bg: #ffffff;
+  --search-text: #0f172a;
+  --search-border: #ef4444;
+  --danger: #ef4444;
+  --danger-strong: #dc2626;
+}
+
+.light {
+  color-scheme: light;
+  --bg: #f8fafc;
+  --bg-shade: #ffffff;
+  --surface: rgba(255, 255, 255, 0.92);
+  --surface-strong: #f1f5f9;
+  --surface-card: #ffffff;
+  --text: #0f172a;
+  --muted: #475569;
+  --accent: #0284c7;
+  --accent-strong: #0ea5e9;
+  --price: #b45309;
+  --button-bg: #0284c7;
+  --button-text: #ffffff;
+  --input-bg: #ffffff;
+  --input-border: rgba(148, 163, 184, 0.32);
+  --search-bg: #ffffff;
+  --search-text: #0f172a;
+  --search-border: #ef4444;
 }
 
 * {
@@ -12,7 +50,8 @@
 body {
   margin: 0;
   min-height: 100vh;
-  background: linear-gradient(180deg, #020617 0%, #0f172a 100%);
+  background: linear-gradient(180deg, var(--bg-shade) 0%, var(--bg) 100%);
+  color: var(--text);
 }
 
 button {
@@ -28,7 +67,7 @@ button {
 .site-header,
 .site-footer {
   padding: 1rem 2rem;
-  background: rgba(15, 23, 42, 0.9);
+  background: var(--surface);
   backdrop-filter: blur(10px);
 }
 
@@ -54,14 +93,14 @@ button {
 }
 
 .main-nav a {
-  color: #cbd5e1;
+  color: var(--muted);
   text-decoration: none;
   transition: color 0.2s ease;
 }
 
 .main-nav a.router-link-active,
 .main-nav a:hover {
-  color: #7dd3fc;
+  color: var(--accent);
 }
 
 main {
@@ -72,12 +111,12 @@ main {
 .site-footer {
   text-align: center;
   font-size: 0.95rem;
-  color: #94a3b8;
+  color: var(--muted);
 }
 
 .user-badge {
   margin-top: 0.35rem;
-  color: #7dd3fc;
+  color: var(--accent);
   font-weight: 600;
 }
 
@@ -97,7 +136,7 @@ main {
 }
 
 .page-subtitle {
-  color: #94a3b8;
+  color: var(--muted);
   margin: 0 auto 2rem;
   max-width: 720px;
 }
@@ -122,43 +161,69 @@ main {
 }
 
 .product-grid {
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
 }
 
 .card {
-  border: 1px solid rgba(148, 163, 184, 0.12);
-  border-radius: 1rem;
-  padding: 1rem;
-  background: rgba(15, 23, 42, 0.95);
-  transition: transform 0.2s ease, border-color 0.2s ease;
+  background: transparent;
+  transition: transform 0.2s ease;
+  text-align: center;
 }
 
 .card:hover {
   transform: translateY(-3px);
-  border-color: rgba(125, 211, 252, 0.5);
+}
+
+.image-wrapper {
+  background: var(--surface-card);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 1 / 1;
 }
 
 .card img {
-  width: 100%;
-  border-radius: 0.75rem;
-  display: block;
-  margin-bottom: 1rem;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  border-radius: 0.25rem;
+  mix-blend-mode: multiply;
 }
 
 .card-heading {
   margin: 0 0 0.5rem;
-  font-size: 1.15rem;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text);
+  text-transform: uppercase;
 }
 
 .card-text {
   margin: 0 0 1rem;
-  color: #cbd5e1;
+  color: var(--muted);
   min-height: 3rem;
+}
+
+.price-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.old-price {
+  font-size: 0.85rem;
+  color: var(--muted);
+  text-decoration: line-through;
 }
 
 .price {
   font-weight: 700;
-  color: #7dd3fc;
+  color: var(--price);
+  font-size: 1.1rem;
 }
 
 .button {
@@ -168,24 +233,28 @@ main {
   padding: 0.9rem 1.2rem;
   border: none;
   border-radius: 999px;
-  color: #0f172a;
-  background: #7dd3fc;
+  color: var(--button-text);
+  background: var(--button-bg);
   font-weight: 700;
   cursor: pointer;
   transition: background 0.2s ease;
 }
 
 .button:hover {
-  background: #38bdf8;
+  background: var(--accent-strong);
 }
 
 .button-secondary {
-  background: rgba(148, 163, 184, 0.12);
-  color: #cbd5e1;
+  background: var(--surface-smooth);
+  color: var(--text);
+}
+
+.theme-toggle {
+  min-width: 120px;
 }
 
 .alert {
-  border-left: 4px solid #38bdf8;
+  border-left: 4px solid var(--accent-strong);
   background: rgba(56, 189, 248, 0.08);
   padding: 1rem;
   border-radius: 0.75rem;
@@ -211,15 +280,15 @@ main {
 
 .field label {
   font-weight: 600;
-  color: #cbd5e1;
+  color: var(--muted);
 }
 
 .field input,
 .field select,
 .field textarea {
-  border: 1px solid rgba(148, 163, 184, 0.16);
-  background: #020617;
-  color: #e2e8f0;
+  border: 1px solid var(--input-border);
+  background: var(--input-bg);
+  color: var(--text);
   padding: 0.9rem 1rem;
   border-radius: 0.75rem;
   font: inherit;
@@ -243,25 +312,25 @@ main {
 
 .table th {
   text-align: left;
-  color: #94a3b8;
+  color: var(--muted);
 }
 
 .table td {
-  color: #e2e8f0;
+  color: var(--text);
 }
 
 .badge {
   display: inline-flex;
   padding: 0.25rem 0.65rem;
-  background: rgba(125, 211, 252, 0.14);
+  background: var(--surface-smooth);
   border-radius: 999px;
-  color: #7dd3fc;
+  color: var(--accent);
   font-size: 0.85rem;
 }
 
 .message {
   margin-top: 1.5rem;
-  color: #e2e8f0;
+  color: var(--text);
 }
 
 .search-bar {
@@ -269,9 +338,9 @@ main {
   align-items: stretch;
   max-width: 800px;
   margin: 0 auto 2.5rem;
-  border: 2px solid #ef4444;
+  border: 2px solid var(--search-border);
   border-radius: 0.75rem;
-  background: #ffffff;
+  background: var(--search-bg);
   overflow: hidden;
   height: 52px;
 }
@@ -280,7 +349,7 @@ main {
   flex: 1;
   border: none;
   background: transparent;
-  color: #0f172a;
+  color: var(--search-text);
   padding: 0 1.5rem;
   font-size: 1rem;
   outline: none;
@@ -288,14 +357,14 @@ main {
 }
 
 .search-bar input::placeholder {
-  color: #94a3b8;
+  color: var(--muted);
 }
 
 .search-bar select {
   border: none;
-  border-left: 1px solid #e2e8f0;
+  border-left: 1px solid var(--search-text);
   background: transparent;
-  color: #334155;
+  color: var(--text);
   padding: 0 1.25rem;
   font-size: 0.95rem;
   outline: none;
@@ -303,7 +372,7 @@ main {
 }
 
 .search-bar .search-button {
-  background: #ef4444;
+  background: var(--danger);
   color: white;
   border: none;
   padding: 0 1.5rem;
@@ -316,5 +385,5 @@ main {
 }
 
 .search-bar .search-button:hover {
-  background: #dc2626;
+  background: var(--danger-strong);
 }
