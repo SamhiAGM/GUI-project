@@ -2,7 +2,7 @@
   <div class="app-shell">
     <header class="site-header">
       <div>
-        <div class="brand">Samhi Stores</div>
+        <div class="brand">TechNova</div>
         <div class="user-badge" v-if="auth.isAuthenticated">Hello, {{ auth.userName }}</div>
       </div>
 
@@ -21,7 +21,7 @@
       <RouterView />
     </main>
     <footer class="site-footer">
-      <p>Samhi Stores • Built with Vue 3, TypeScript, Pinia, and Vue Router.</p>
+      <p>TechNova • Built with Vue 3, TypeScript, Pinia, and Vue Router.</p>
     </footer>
   </div>
 </template>
