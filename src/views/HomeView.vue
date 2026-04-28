@@ -3,7 +3,7 @@
     <div class="hero">
       <h1 class="page-title" style="text-align: center;">Seamless shopping, swift delivery.</h1>
       <p class="page-subtitle" style="text-align: center;">
-        Browse the latest products, add items to your cart, and complete checkout in a fast Vue-powered SPA.
+        Fast shopping with Vue power.
       </p>
     </div>
 
