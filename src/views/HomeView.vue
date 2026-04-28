@@ -1,7 +1,7 @@
 <template>
   <section>
     <div class="hero">
-      <h1 class="page-title">Online shopping made easy.</h1>
+      <h1 class="page-title">From cart to doorstep in no time</h1>
       <p class="page-subtitle">
         Browse the latest products, add items to your cart, and complete checkout in a fast Vue-powered SPA.
       </p>

@@ -239,7 +239,7 @@ export const products: Product[] = [
     id: 27,
     name: 'iPhone 11',
     price: 499.99,
-    image: 'https://images.unsplash.com/photo-1504198458649-3128b932f49a?auto=format&fit=crop&w=800&q=80',
+    image: 'https://source.unsplash.com/800x800/?iphone-11',
     description: 'Classic iPhone with a dual-camera system and reliable performance.',
     category: 'iPhones',
     stock: 20
@@ -248,7 +248,7 @@ export const products: Product[] = [
     id: 28,
     name: 'iPhone 11 Pro',
     price: 749.99,
-    image: 'https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=800&q=80',
+    image: 'https://source.unsplash.com/800x800/?iphone-11-pro',
     description: 'Pro-level iPhone with a triple-camera system and bright OLED display.',
     category: 'iPhones',
     stock: 18
@@ -257,7 +257,7 @@ export const products: Product[] = [
     id: 29,
     name: 'iPhone 11 Pro Max',
     price: 849.99,
-    image: 'https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=800&q=80',
+    image: 'https://source.unsplash.com/800x800/?iphone-11-pro-max',
     description: 'Large-screen iPhone with excellent battery life and premium camera features.',
     category: 'iPhones',
     stock: 15
@@ -266,7 +266,7 @@ export const products: Product[] = [
     id: 30,
     name: 'iPhone 12',
     price: 599.99,
-    image: 'https://images.unsplash.com/photo-1542751110-97427bbecf20?auto=format&fit=crop&w=800&q=80',
+    image: 'https://source.unsplash.com/800x800/?iphone-12',
     description: 'Modern iPhone with 5G support and a gorgeous Super Retina XDR display.',
     category: 'iPhones',
     stock: 21
@@ -275,7 +275,7 @@ export const products: Product[] = [
     id: 31,
     name: 'iPhone 12 Mini',
     price: 549.99,
-    image: 'https://images.unsplash.com/photo-1542751110-97427bbecf20?auto=format&fit=crop&w=800&q=80',
+    image: 'https://source.unsplash.com/featured/800x800/?iphone-12-mini',
     description: 'Compact iPhone with powerful performance and easy one-handed use.',
     category: 'iPhones',
     stock: 18
@@ -284,7 +284,7 @@ export const products: Product[] = [
     id: 32,
     name: 'iPhone 12 Pro',
     price: 999.99,
-    image: 'https://images.unsplash.com/photo-1542751110-97427bbecf20?auto=format&fit=crop&w=800&q=80',
+    image: 'https://source.unsplash.com/featured/800x800/?iphone-12-pro',
     description: 'Advanced iPhone with a pro camera system and stainless steel finish.',
     category: 'iPhones',
     stock: 16
@@ -293,7 +293,7 @@ export const products: Product[] = [
     id: 33,
     name: 'iPhone 12 Pro Max',
     price: 1099.99,
-    image: 'https://images.unsplash.com/photo-1542751110-97427bbecf20?auto=format&fit=crop&w=800&q=80',
+    image: 'https://source.unsplash.com/featured/800x800/?iphone-12-pro-max',
     description: 'Large-screen premium iPhone with outstanding battery life and camera.',
     category: 'iPhones',
     stock: 14
@@ -302,7 +302,7 @@ export const products: Product[] = [
     id: 34,
     name: 'iPhone 13',
     price: 699.99,
-    image: 'https://images.unsplash.com/photo-1504198458649-3128b932f49a?auto=format&fit=crop&w=800&q=80',
+    image: 'https://source.unsplash.com/featured/800x800/?iphone-13',
     description: 'Reliable iPhone with improved battery life and cinematic camera mode.',
     category: 'iPhones',
     stock: 22
@@ -311,7 +311,7 @@ export const products: Product[] = [
     id: 35,
     name: 'iPhone 13 Mini',
     price: 649.99,
-    image: 'https://images.unsplash.com/photo-1504198458649-3128b932f49a?auto=format&fit=crop&w=800&q=80',
+    image: 'https://source.unsplash.com/featured/800x800/?iphone-13-mini',
     description: 'Small form-factor iPhone with powerful internals and compact design.',
     category: 'iPhones',
     stock: 19
@@ -320,7 +320,7 @@ export const products: Product[] = [
     id: 36,
     name: 'iPhone 13 Pro',
     price: 999.99,
-    image: 'https://images.unsplash.com/photo-1504198458649-3128b932f49a?auto=format&fit=crop&w=800&q=80',
+    image: 'https://source.unsplash.com/featured/800x800/?iphone-13-pro',
     description: 'Pro model featuring a triple-camera system and ProMotion display.',
     category: 'iPhones',
     stock: 16
@@ -329,7 +329,7 @@ export const products: Product[] = [
     id: 37,
     name: 'iPhone 13 Pro Max',
     price: 1099.99,
-    image: 'https://images.unsplash.com/photo-1504198458649-3128b932f49a?auto=format&fit=crop&w=800&q=80',
+    image: 'https://source.unsplash.com/featured/800x800/?iphone-13-pro-max',
     description: 'Large-screen iPhone with the best camera system and long-lasting battery.',
     category: 'iPhones',
     stock: 13
@@ -338,7 +338,7 @@ export const products: Product[] = [
     id: 38,
     name: 'iPhone 14',
     price: 799.99,
-    image: 'https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=800&q=80',
+    image: 'https://source.unsplash.com/featured/800x800/?iphone-14',
     description: 'Latest generation iPhone with dynamic island and advanced safety features.',
     category: 'iPhones',
     stock: 20
@@ -347,7 +347,7 @@ export const products: Product[] = [
     id: 39,
     name: 'iPhone 14 Plus',
     price: 899.99,
-    image: 'https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=800&q=80',
+    image: 'https://source.unsplash.com/featured/800x800/?iphone-14-plus',
     description: 'Bigger iPhone with a large display and all the latest features.',
     category: 'iPhones',
     stock: 18
@@ -356,7 +356,7 @@ export const products: Product[] = [
     id: 40,
     name: 'iPhone 14 Pro',
     price: 1099.99,
-    image: 'https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=800&q=80',
+    image: 'https://source.unsplash.com/featured/800x800/?iphone-14-pro',
     description: 'Pro iPhone with Dynamic Island, ProMotion display, and advanced cameras.',
     category: 'iPhones',
     stock: 15
@@ -365,7 +365,7 @@ export const products: Product[] = [
     id: 41,
     name: 'iPhone 14 Pro Max',
     price: 1199.99,
-    image: 'https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=800&q=80',
+    image: 'https://source.unsplash.com/featured/800x800/?iphone-14-pro-max',
     description: 'Top-tier large-screen iPhone with premium camera and battery life.',
     category: 'iPhones',
     stock: 12
@@ -374,7 +374,7 @@ export const products: Product[] = [
     id: 42,
     name: 'iPhone 15',
     price: 899.99,
-    image: 'https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=800&q=80',
+    image: 'https://source.unsplash.com/featured/800x800/?iphone-15',
     description: 'Newest iPhone with advanced performance and versatile camera upgrades.',
     category: 'iPhones',
     stock: 22
@@ -383,7 +383,7 @@ export const products: Product[] = [
     id: 43,
     name: 'iPhone 15 Plus',
     price: 999.99,
-    image: 'https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=800&q=80',
+    image: 'https://source.unsplash.com/featured/800x800/?iphone-15-plus',
     description: 'Large iPhone with long battery life and a bright display.',
     category: 'iPhones',
     stock: 18
@@ -392,7 +392,7 @@ export const products: Product[] = [
     id: 44,
     name: 'iPhone 15 Pro',
     price: 1199.99,
-    image: 'https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=800&q=80',
+    image: 'https://source.unsplash.com/featured/800x800/?iphone-15-pro',
     description: 'Professional-level iPhone with a titanium frame and enhanced camera system.',
     category: 'iPhones',
     stock: 14
@@ -401,7 +401,7 @@ export const products: Product[] = [
     id: 45,
     name: 'iPhone 15 Pro Max',
     price: 1299.99,
-    image: 'https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=800&q=80',
+    image: 'https://source.unsplash.com/featured/800x800/?iphone-15-pro-max',
     description: 'Top flagship iPhone with the largest display and best camera performance.',
     category: 'iPhones',
     stock: 12
@@ -410,7 +410,7 @@ export const products: Product[] = [
     id: 46,
     name: 'iPhone 16',
     price: 999.99,
-    image: 'https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=800&q=80',
+    image: 'https://source.unsplash.com/featured/800x800/?iphone-16',
     description: 'Advanced iPhone with the latest chipset and upgraded camera capabilities.',
     category: 'iPhones',
     stock: 20
@@ -419,7 +419,7 @@ export const products: Product[] = [
     id: 47,
     name: 'iPhone 16 Pro',
     price: 1299.99,
-    image: 'https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=800&q=80',
+    image: 'https://source.unsplash.com/featured/800x800/?iphone-16-pro',
     description: 'Cutting-edge iPhone designed for power users with pro photography features.',
     category: 'iPhones',
     stock: 14
@@ -428,7 +428,7 @@ export const products: Product[] = [
     id: 48,
     name: 'iPhone 16 Pro Max',
     price: 1399.99,
-    image: 'https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=800&q=80',
+    image: 'https://source.unsplash.com/featured/800x800/?iphone-16-pro-max',
     description: 'Ultimate large-screen iPhone with the longest battery life and top performance.',
     category: 'iPhones',
     stock: 10
@@ -437,7 +437,7 @@ export const products: Product[] = [
     id: 49,
     name: 'iPhone 17',
     price: 1099.99,
-    image: 'https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=800&q=80',
+    image: 'https://source.unsplash.com/featured/800x800/?iphone-17',
     description: 'Latest generation iPhone with premium design and improved battery life.',
     category: 'iPhones',
     stock: 20
@@ -446,7 +446,7 @@ export const products: Product[] = [
     id: 50,
     name: 'iPhone 17 Pro',
     price: 1399.99,
-    image: 'https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=800&q=80',
+    image: 'https://source.unsplash.com/featured/800x800/?iphone-17-pro',
     description: 'High-end iPhone with next-level camera and pro-grade performance.',
     category: 'iPhones',
     stock: 12
@@ -455,7 +455,7 @@ export const products: Product[] = [
     id: 51,
     name: 'iPhone 17 Pro Max',
     price: 1499.99,
-    image: 'https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=800&q=80',
+    image: 'https://source.unsplash.com/featured/800x800/?iphone-17-pro-max',
     description: 'Flagship iPhone with the largest screen, best battery life, and elite camera.',
     category: 'iPhones',
     stock: 10
