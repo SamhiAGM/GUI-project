@@ -1,14 +1,15 @@
 <template>
   <article class="card">
-    <RouterLink :to="`/product/${product.id}`">
-      <img :src="product.image" :alt="product.name" />
+    <RouterLink :to="`/product/${product.id}`" class="card-image-link">
+      <div class="image-wrapper">
+        <img :src="product.image" :alt="product.name" />
+      </div>
     </RouterLink>
-    <div>
+    <div class="card-content">
       <h3 class="card-heading">{{ product.name }}</h3>
-      <p class="card-text">{{ product.description }}</p>
-      <div class="grid" style="align-items: center; justify-content: space-between;">
-        <span class="price">${{ product.price.toFixed(2) }}</span>
-        <button class="button" @click="addProduct">Add to Cart</button>
+      <div class="price-container">
+        <span class="old-price">Rs {{ (product.price + 10000).toLocaleString('en-US', {minimumFractionDigits: 2}) }}</span>
+        <span class="price">Rs {{ product.price.toLocaleString('en-US', {minimumFractionDigits: 2}) }}</span>
       </div>
     </div>
   </article>

@@ -6,8 +6,8 @@
   --surface: rgba(15, 23, 42, 0.9);
   --surface-strong: #020617;
   --surface-card: rgba(248, 249, 250, 0.12);
-  --text: #e2e8f0;
-  --muted: #94a3b8;
+  --text: #f8fafc;
+  --muted: #cbd5e1;
   --accent: #7dd3fc;
   --accent-strong: #38bdf8;
   --price: #f59e0b;
@@ -90,6 +90,8 @@ button {
 .main-nav {
   display: flex;
   gap: 1rem;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .main-nav a {
@@ -101,6 +103,25 @@ button {
 .main-nav a.router-link-active,
 .main-nav a:hover {
   color: var(--accent);
+}
+
+.light .site-header {
+  background: #0f172a;
+  color: #f8fafc;
+}
+
+.light .site-header .main-nav a {
+  color: #cbd5e1;
+}
+
+.light .site-header .main-nav a.router-link-active,
+.light .site-header .main-nav a:hover {
+  color: #38bdf8;
+}
+
+.light .site-header .button-secondary {
+  background: #1e293b;
+  color: #f8fafc;
 }
 
 main {
@@ -165,17 +186,20 @@ main {
 }
 
 .card {
-  background: transparent;
+  background: var(--surface-card);
   transition: transform 0.2s ease;
   text-align: center;
+  border-radius: 1rem;
+  padding: 1rem;
 }
 
 .card:hover {
   transform: translateY(-3px);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.15);
 }
 
 .image-wrapper {
-  background: var(--surface-card);
+  background: var(--surface);
   border-radius: 0.5rem;
   padding: 1rem;
   margin-bottom: 1rem;
@@ -190,7 +214,7 @@ main {
   max-height: 100%;
   object-fit: contain;
   border-radius: 0.25rem;
-  mix-blend-mode: multiply;
+  mix-blend-mode: normal;
 }
 
 .card-heading {
@@ -250,7 +274,8 @@ main {
 }
 
 .theme-toggle {
-  min-width: 120px;
+  min-width: 140px;
+  white-space: nowrap;
 }
 
 .alert {
@@ -362,9 +387,9 @@ main {
 
 .search-bar select {
   border: none;
-  border-left: 1px solid var(--search-text);
+  border-left: 1px solid var(--search-border);
   background: transparent;
-  color: var(--text);
+  color: var(--search-text);
   padding: 0 1.25rem;
   font-size: 0.95rem;
   outline: none;
