@@ -47,11 +47,6 @@ export const products: Product[] = [
     stock: 40
   },
   {
-    id: 5,
-    name: 'Pulse Gaming Mouse',
-    price: 69.99,
-    image: 'https://images.unsplash.com/photo-1527814050087-379381547996?auto=format&fit=crop&w=800&q=80',
-    description: 'High-precision RGB mouse built for comfort, speed, and esports control.',
     category: 'Gaming',
     stock: 18
   },

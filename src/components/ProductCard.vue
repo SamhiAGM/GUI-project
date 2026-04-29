@@ -8,7 +8,7 @@
     <div class="card-content">
       <h3 class="card-heading">{{ product.name }}</h3>
       <div class="price-container">
-        <span class="old-price">Rs {{ (product.price + 10000).toLocaleString('en-US', {minimumFractionDigits: 2}) }}</span>
+        <span class="old-price">Rs {{ (product.price * 1.25).toLocaleString('en-US', {minimumFractionDigits: 2}) }}</span>
         <span class="price">Rs {{ product.price.toLocaleString('en-US', {minimumFractionDigits: 2}) }}</span>
       </div>
     </div>
