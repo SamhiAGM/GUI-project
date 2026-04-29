@@ -1,8 +1,8 @@
 <template>
   <section>
     <div class="hero">
-      <h1 class="page-title" style="text-align: center;">Seamless shopping, swift delivery.</h1>
-      <p class="page-subtitle" style="text-align: center;">
+      <h1 class="page-title">Seamless shopping, swift delivery.</h1>
+      <p class="page-subtitle">
         Fast shopping with Vue power.
       </p>
     </div>
@@ -28,13 +28,17 @@
       </button>
     </div>
 
-    <div class="grid product-grid">
+    <TransitionGroup 
+      name="list" 
+      tag="div" 
+      class="grid product-grid"
+    >
       <ProductCard
         v-for="product in filteredProducts"
         :key="product.id"
         :product="product"
       />
-    </div>
+    </TransitionGroup>
   </section>
 </template>
 

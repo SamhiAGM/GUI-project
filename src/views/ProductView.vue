@@ -1,14 +1,18 @@
 <template>
-  <section v-if="product">
+  <section v-if="product" class="product-page">
     <div class="product-details">
-      <img :src="product.image" :alt="product.name" />
-      <div>
+      <div class="product-image-container">
+        <img :src="product.image" :alt="product.name" class="main-image" />
+      </div>
+      <div class="product-info-container">
         <h1 class="page-title">{{ product.name }}</h1>
         <p class="badge">{{ product.category }}</p>
         <p class="page-subtitle">{{ product.description }}</p>
-        <p class="price">${{ product.price.toFixed(2) }}</p>
-        <p>Stock available: {{ product.stock }}</p>
-        <button class="button" @click="addToCart">Add to Cart</button>
+        <div class="price-action">
+          <p class="price">Rs {{ product.price.toLocaleString('en-US', {minimumFractionDigits: 2}) }}</p>
+          <p class="stock-status">Stock available: {{ product.stock }}</p>
+          <button class="button buy-button" @click="addToCart">Add to Cart</button>
+        </div>
       </div>
     </div>
   </section>

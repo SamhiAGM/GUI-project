@@ -21,7 +21,11 @@
       </nav>
     </header>
     <main>
-      <RouterView />
+      <RouterView v-slot="{ Component }">
+        <transition name="page" mode="out-in">
+          <component :is="Component" />
+        </transition>
+      </RouterView>
     </main>
     <footer class="site-footer">
       <p>TechNova • Built with Vue 3, TypeScript, Pinia, and Vue Router.</p>

@@ -9,8 +9,19 @@ const remove = (id: number) => cart.removeItem(id)
 <template>
   <div class="cart-page">
     <header class="cart-header">
-      <h1 class="page-title">Your Cart</h1>
-      <p class="page-subtitle corner-subtitle">Review items in your cart before checkout.</p>
+      <div class="header-content">
+        <div class="cart-icon-wrapper">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+          </svg>
+        </div>
+        <div>
+          <h1 class="page-title">Your Cart</h1>
+          <p class="page-subtitle corner-subtitle">Review items in your cart before checkout.</p>
+        </div>
+      </div>
     </header>
 
     <div v-if="cart.items.length === 0" class="empty-cart">
@@ -22,7 +33,7 @@ const remove = (id: number) => cart.removeItem(id)
 
     <div v-else class="cart-layout">
       <div class="cart-items">
-        <div v-for="item in cart.items" :key="item.id" class="cart-item-card">
+        <div v-for="(item, index) in cart.items" :key="item.id" class="cart-item-card" :style="{ animationDelay: (index * 0.1) + 's' }">
           <div class="item-info">
             <div class="item-details">
               <h3 class="item-name">{{ item.name }}</h3>
@@ -71,20 +82,69 @@ const remove = (id: number) => cart.removeItem(id)
 }
 
 .cart-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
   margin-bottom: 3rem;
-  border-bottom: 1px solid var(--input-border);
-  padding-bottom: 1rem;
+  padding: 3rem;
+  background: var(--surface-strong);
+  border-radius: 2rem;
+  border: 1px solid var(--accent);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+  position: relative;
+  overflow: hidden;
+  animation: slideDownFade 0.8s var(--transition-slow) both;
+}
+
+.cart-header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at top left, rgba(125, 211, 252, 0.15) 0%, transparent 60%);
+  pointer-events: none;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.cart-icon-wrapper {
+  background: var(--accent);
+  color: var(--bg-shade);
+  padding: 1rem;
+  border-radius: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 20px rgba(125, 211, 252, 0.3);
+  animation: scaleIn 0.6s var(--transition-slow) both;
+}
+
+.cart-header .page-title {
+  margin: 0;
+  font-size: 2.5rem;
+  text-align: left;
 }
 
 .corner-subtitle {
-  margin: 0;
-  font-size: 0.9rem;
+  margin: 0.5rem 0 0;
+  font-size: 1rem;
   font-weight: 500;
   opacity: 0.8;
   color: var(--accent);
+}
+
+@keyframes slideDownFade {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .cart-layout {
@@ -115,6 +175,7 @@ const remove = (id: number) => cart.removeItem(id)
   gap: 1.5rem;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   border: 1px solid rgba(255, 255, 255, 0.05);
+  animation: slideInLeft 0.6s var(--transition-slow) both;
 }
 
 .cart-item-card:hover {
