@@ -57,7 +57,7 @@ const categories = computed(() => {
 const filteredProducts = computed(() => {
   const lowerSearch = searchTerm.value.trim().toLowerCase()
 
-  return products.filter((product) => {
+  const result = products.filter((product) => {
     const matchesCategory = selectedCategory.value === 'all' || product.category === selectedCategory.value
     const matchesSearch =
       !lowerSearch ||
@@ -65,6 +65,16 @@ const filteredProducts = computed(() => {
       product.description.toLowerCase().includes(lowerSearch)
 
     return matchesCategory && matchesSearch
+  })
+
+  // Sort by priority: iPhones (1), Laptops (2), others (3+)
+  return result.sort((a, b) => {
+    const getPriority = (cat: string) => {
+      if (cat === 'iPhones') return 1
+      if (cat === 'Laptops') return 2
+      return 3
+    }
+    return getPriority(a.category) - getPriority(b.category)
   })
 })
 </script>
