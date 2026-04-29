@@ -1,8 +1,19 @@
 <template>
   <div class="app-shell" :class="{ 'is-transitioning': isTransitioning }">
+    <!-- Anime Transition Overlay -->
+    <div class="anime-overlay" :class="{ 'active': isTransitioning }">
+      <div class="speed-lines"></div>
+      <div class="character-silhouette"></div>
+      <div class="transition-slash"></div>
+    </div>
+
     <header class="site-header">
       <div class="brand-container">
-        <div class="logo-wrapper">
+        <div 
+          class="logo-wrapper" 
+          @click.stop="triggerLogoBurst" 
+          :class="{ 'is-bursting': isBursting }"
+        >
           <svg class="brand-logo" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle class="logo-ring" cx="20" cy="20" r="18" stroke="currentColor" stroke-width="2" stroke-dasharray="60 40" />
             <path class="logo-star" d="M20 10L22.5 17.5H30L23.75 22.5L26.25 30L20 25L13.75 30L16.25 22.5L10 17.5H17.5L20 10Z" fill="currentColor" />
@@ -31,7 +42,7 @@
     </header>
     <main>
       <RouterView v-slot="{ Component }">
-        <transition name="page" mode="out-in">
+        <transition name="page" mode="out-in" @before-leave="startAnimeTransition" @after-enter="endAnimeTransition">
           <component :is="Component" />
         </transition>
       </RouterView>
@@ -55,15 +66,44 @@
 </template>
 
 <script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
-import { ref, onMounted } from 'vue'
+import { RouterLink, RouterView, useRoute } from 'vue-router'
+import { ref, onMounted, watch } from 'vue'
 import { useAuthStore } from './stores/auth'
 
 const auth = useAuthStore()
+const route = useRoute()
 const logout = () => auth.logout()
 
 const theme = ref<'dark' | 'light'>('dark')
 const isTransitioning = ref(false)
+const isBursting = ref(false)
+
+const startAnimeTransition = () => {
+  isTransitioning.value = true
+}
+
+const endAnimeTransition = () => {
+  // Wait for the entrance animation to finish before unlocking UI
+  setTimeout(() => {
+    isTransitioning.value = false
+  }, 600)
+}
+
+// Safety: Watch route changes to ensure transitioning is reset even if hooks fail
+watch(() => route.path, () => {
+  if (!isTransitioning.value) {
+    isTransitioning.value = true
+    setTimeout(() => { isTransitioning.value = false }, 1000)
+  }
+})
+
+const triggerLogoBurst = () => {
+  if (isBursting.value) return
+  isBursting.value = true
+  setTimeout(() => {
+    isBursting.value = false
+  }, 1000)
+}
 
 const applyTheme = (value: 'dark' | 'light') => {
   theme.value = value

@@ -31,16 +31,47 @@
           <input id="email" v-model="email" type="email" placeholder="john@example.com" required />
         </div>
         <div class="field animate-3">
-          <label for="address">Shipping Address</label>
-          <textarea id="address" v-model="address" placeholder="123 Street Name, City" required></textarea>
+          <label for="phone">Phone Number</label>
+          <input id="phone" v-model="phone" type="tel" placeholder="07XXXXXXXX" required />
         </div>
         <div class="field animate-4">
+          <label for="address">Shipping Address</label>
+          <textarea id="address" v-model="address" placeholder="123 Street Name" required></textarea>
+        </div>
+        <div class="field animate-5">
+          <label for="city">City / District</label>
+          <input id="city" v-model="city" type="text" placeholder="Colombo" required />
+        </div>
+        <div class="field animate-6">
+          <label for="postalCode">Postal Code</label>
+          <input id="postalCode" v-model="postalCode" type="text" placeholder="10100" required />
+        </div>
+
+        <div class="payment-section animate-7">
+          <h3 class="section-title">Payment Details</h3>
+          <div class="field">
+            <label for="cardNumber">Card Number</label>
+            <input id="cardNumber" v-model="cardNumber" type="text" placeholder="xxxx xxxx xxxx xxxx" required />
+          </div>
+          <div class="payment-row">
+            <div class="field">
+              <label for="expiry">Expiry Date</label>
+              <input id="expiry" v-model="expiry" type="text" placeholder="MM/YY" required />
+            </div>
+            <div class="field">
+              <label for="cvv">CVV</label>
+              <input id="cvv" v-model="cvv" type="text" placeholder="xxx" required />
+            </div>
+          </div>
+        </div>
+
+        <div class="field animate-8">
           <label for="notes">Order Notes</label>
           <textarea id="notes" v-model="notes" placeholder="Optional notes for delivery"></textarea>
         </div>
       </div>
       
-      <div class="order-total-bar animate-5">
+      <div class="order-total-bar animate-9">
         <div class="total-info">
           <span class="label">Amount to Pay</span>
           <p class="price">Rs {{ cart.subtotal.toLocaleString('en-US', {minimumFractionDigits: 2}) }}</p>
@@ -63,12 +94,18 @@ import { useCartStore } from '../stores/cart'
 const cart = useCartStore()
 const name = ref('')
 const email = ref('')
+const phone = ref('')
 const address = ref('')
+const city = ref('')
+const postalCode = ref('')
+const cardNumber = ref('')
+const expiry = ref('')
+const cvv = ref('')
 const notes = ref('')
 const orderPlaced = ref(false)
 
 const submitOrder = () => {
-  if (!name.value || !email.value || !address.value) {
+  if (!name.value || !email.value || !phone.value || !address.value || !city.value || !postalCode.value || !cardNumber.value || !expiry.value || !cvv.value) {
     return
   }
 
@@ -171,6 +208,30 @@ const submitOrder = () => {
 .animate-3 { animation: slideUpFade 0.6s var(--transition-slow) both; animation-delay: 0.5s; }
 .animate-4 { animation: slideUpFade 0.6s var(--transition-slow) both; animation-delay: 0.6s; }
 .animate-5 { animation: slideUpFade 0.6s var(--transition-slow) both; animation-delay: 0.7s; }
+.animate-6 { animation: slideUpFade 0.6s var(--transition-slow) both; animation-delay: 0.8s; }
+.animate-7 { animation: slideUpFade 0.6s var(--transition-slow) both; animation-delay: 0.9s; }
+.animate-8 { animation: slideUpFade 0.6s var(--transition-slow) both; animation-delay: 1.0s; }
+.animate-9 { animation: slideUpFade 0.6s var(--transition-slow) both; animation-delay: 1.1s; }
+
+.payment-section {
+  grid-column: 1 / -1;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--glass-border);
+}
+
+.section-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--accent);
+  margin-bottom: 1.25rem;
+}
+
+.payment-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
 
 .empty-checkout {
   text-align: center;

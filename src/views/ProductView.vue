@@ -43,5 +43,6 @@ const addToCart = () => {
   }
 
   cart.addToCart(product)
+  router.push('/cart')
 }
 </script>

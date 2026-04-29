@@ -21,5 +21,5 @@ export const iphoneImages = {
   "iPhone 16 Pro Max": "/iphone-16-pro-max.jpg",
   "iPhone 17": "/iphone-17.jpg",
   "iPhone 17 Pro": "/iphone-17-pro.jpg",
-  "iPhone 17 Pro Max": "/iphone-17-pro-max.png"
+  "iPhone 17 Pro Max": "https://th.bing.com/th/id/OIP.00rpkiYVxlZjlc4ikclutwHaHa?w=184&h=184&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
 };
