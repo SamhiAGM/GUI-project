@@ -42,7 +42,15 @@ const remove = (id: number) => cart.removeItem(id)
           </div>
           <div class="item-actions">
             <div class="quantity-control">
-              <span>Qty: {{ item.quantity }}</span>
+              <label :for="'qty-' + item.id">Qty:</label>
+              <select 
+                :id="'qty-' + item.id" 
+                v-model="item.quantity" 
+                @change="cart.updateQuantity(item.id, Number(item.quantity))"
+                class="qty-select"
+              >
+                <option v-for="n in 10" :key="n" :value="n">{{ n }}</option>
+              </select>
             </div>
             <div class="item-total">
               Rs {{ (item.price * item.quantity).toLocaleString('en-US', {minimumFractionDigits: 2}) }}
