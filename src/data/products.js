@@ -1,50 +1,5 @@
 export const products = [
     {
-        id: 1,
-        name: 'Aurora Wireless Headphones',
-        price: 182500,
-        image: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=800&q=80',
-        description: 'Comfortable noise-cancelling headphones with premium sound and long battery life.',
-        category: 'Audio',
-        stock: 24
-    },
-    {
-        id: 2,
-        name: 'Luna Smart Watch',
-        price: 200000,
-        image: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=800&q=80',
-        description: 'Track health, messages, and activity with a sleek touchscreen smartwatch.',
-        category: 'Wearables',
-        stock: 16
-    },
-    {
-        id: 3,
-        name: 'Nova Laptop Backpack',
-        price: 170000,
-        image: 'https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=800&q=80',
-        description: 'Durable, water-resistant backpack with padded laptop sleeve and smart pockets.',
-        category: 'Accessories',
-        stock: 35
-    },
-    {
-        id: 25,
-        name: 'Gigabyte Aero 17',
-        price: 700000,
-        image: 'https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?auto=format&fit=crop&w=800&q=80',
-        description: 'Creator laptop with a large 17-inch 4K display and high-powered graphics.',
-        category: 'Laptops',
-        stock: 6
-    },
-    {
-        id: 26,
-        name: 'Surface Laptop 5',
-        price: 475000,
-        image: 'https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=800&q=80',
-        description: 'Sleek Microsoft laptop with a PixelSense touchscreen and premium finish.',
-        category: 'Laptops',
-        stock: 17
-    },
-    {
         id: 27,
         name: 'iPhone 11',
         price: 150000,
