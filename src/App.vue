@@ -41,11 +41,7 @@
       </nav>
     </header>
     <main>
-      <RouterView v-slot="{ Component }">
-        <transition name="page" mode="out-in" @before-leave="startAnimeTransition" @after-enter="endAnimeTransition">
-          <component :is="Component" />
-        </transition>
-      </RouterView>
+      <RouterView />
     </main>
     <footer class="site-footer">
       <div class="footer-content">
@@ -89,13 +85,7 @@ const endAnimeTransition = () => {
   }, 600)
 }
 
-// Safety: Watch route changes to ensure transitioning is reset even if hooks fail
-watch(() => route.path, () => {
-  if (!isTransitioning.value) {
-    isTransitioning.value = true
-    setTimeout(() => { isTransitioning.value = false }, 1000)
-  }
-})
+
 
 const triggerLogoBurst = () => {
   if (isBursting.value) return

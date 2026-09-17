@@ -35,15 +35,7 @@ export const products = [
         category: 'Home',
         stock: 40
     },
-    {
-        id: 5,
-        name: 'Pulse Gaming Mouse',
-        price: 69.99,
-        image: 'https://images.unsplash.com/photo-1527814050087-379381547996?auto=format&fit=crop&w=800&q=80',
-        description: 'High-precision RGB mouse built for comfort, speed, and esports control.',
-        category: 'Gaming',
-        stock: 18
-    },
+
     {
         id: 6,
         name: 'Nova 50W Portable Charger',
@@ -53,168 +45,7 @@ export const products = [
         category: 'Power',
         stock: 50
     },
-    {
-        id: 7,
-        name: 'Asus VivoBook 15',
-        price: 649.0,
-        image: 'https://dummyimage.com/400x400/000/fff&text=ASUS+Vivobook+15',
-        description: 'Everyday 15-inch laptop with Intel processor, thin design, and a NanoEdge display.',
-        category: 'Laptops',
-        stock: 18
-    },
-    {
-        id: 8,
-        name: 'Asus ZenBook 14',
-        price: 1099.0,
-        image: 'https://dummyimage.com/400x400/000/fff&text=ASUS+Zenbook+14',
-        description: 'Premium 14-inch ultrabook with sleek metal chassis and long battery life.',
-        category: 'Laptops',
-        stock: 12
-    },
-    {
-        id: 9,
-        name: 'Dell XPS 13',
-        price: 1249.0,
-        image: 'https://dummyimage.com/400x400/000/fff&text=Dell+XPS+13',
-        description: 'Compact 13-inch laptop with InfinityEdge display and premium aluminum build.',
-        category: 'Laptops',
-        stock: 14
-    },
-    {
-        id: 10,
-        name: 'Dell Inspiron 16',
-        price: 899.0,
-        image: 'https://dummyimage.com/400x400/000/fff&text=Dell+Inspiron+16',
-        description: 'Versatile 16-inch laptop for productivity and media with a crisp display.',
-        category: 'Laptops',
-        stock: 20
-    },
-    {
-        id: 11,
-        name: 'HP Spectre x360',
-        price: 1399.0,
-        image: 'https://dummyimage.com/400x400/000/fff&text=HP+Spectre+x360',
-        description: 'Convertible 2-in-1 laptop with powerful performance and a touchscreen display.',
-        category: 'Laptops',
-        stock: 8
-    },
-    {
-        id: 12,
-        name: 'HP Envy 14',
-        price: 1099.0,
-        image: 'https://dummyimage.com/400x400/000/fff&text=HP+Envy+14',
-        description: 'Premium 14-inch laptop with bright colors and high-quality speakers.',
-        category: 'Laptops',
-        stock: 10
-    },
-    {
-        id: 13,
-        name: 'Lenovo Yoga Slim 7',
-        price: 999.0,
-        image: 'https://dummyimage.com/400x400/000/fff&text=Lenovo+Yoga+Slim+7',
-        description: 'Thin and light laptop with a responsive keyboard and long battery life.',
-        category: 'Laptops',
-        stock: 16
-    },
-    {
-        id: 14,
-        name: 'Lenovo Legion 5',
-        price: 1299.0,
-        image: 'https://dummyimage.com/400x400/000/fff&text=Lenovo+Legion+5',
-        description: 'Gaming laptop with high refresh rate display and powerful graphics.',
-        category: 'Laptops',
-        stock: 12
-    },
-    {
-        id: 15,
-        name: 'MSI Prestige 14',
-        price: 1149.0,
-        image: 'https://dummyimage.com/400x400/000/fff&text=MSI+Prestige+14',
-        description: 'Professional laptop with lightweight chassis and fast performance.',
-        category: 'Laptops',
-        stock: 11
-    },
-    {
-        id: 16,
-        name: 'MSI Stealth 16',
-        price: 1649.0,
-        image: 'https://dummyimage.com/400x400/000/fff&text=MSI+Stealth+16',
-        description: 'Powerful gaming laptop with a premium display and advanced cooling system.',
-        category: 'Laptops',
-        stock: 9
-    },
-    {
-        id: 17,
-        name: 'Acer Swift 3',
-        price: 749.0,
-        image: 'https://dummyimage.com/400x400/000/fff&text=Acer+Swift+3',
-        description: 'Lightweight and affordable laptop with all-day battery life.',
-        category: 'Laptops',
-        stock: 22
-    },
-    {
-        id: 18,
-        name: 'Acer Predator Helios',
-        price: 1399.0,
-        image: 'https://dummyimage.com/400x400/000/fff&text=Acer+Predator+Helios',
-        description: 'Gaming laptop with high-end graphics and fast refresh rate display.',
-        category: 'Laptops',
-        stock: 10
-    },
-    {
-        id: 19,
-        name: 'Razer Blade 15',
-        price: 1899.0,
-        image: 'https://dummyimage.com/400x400/000/fff&text=Razer+Blade+15',
-        description: 'Sleek gaming laptop with premium build and powerful GPU performance.',
-        category: 'Laptops',
-        stock: 7
-    },
-    {
-        id: 20,
-        name: 'Razer Book 13',
-        price: 1399.0,
-        image: 'https://dummyimage.com/400x400/000/fff&text=Razer+Book+13',
-        description: 'Productivity-focused laptop with a vibrant display and slim chassis.',
-        category: 'Laptops',
-        stock: 13
-    },
-    {
-        id: 21,
-        name: 'MacBook Air M2',
-        price: 1199.0,
-        image: 'https://dummyimage.com/400x400/000/fff&text=MacBook+Air+M2',
-        description: 'Ultra-thin laptop with Apple silicon, long battery life, and crisp display.',
-        category: 'Laptops',
-        stock: 15
-    },
-    {
-        id: 22,
-        name: 'MacBook Pro 14',
-        price: 1999.0,
-        image: 'https://dummyimage.com/400x400/000/fff&text=MacBook+Pro+14',
-        description: 'Powerful professional laptop with a Liquid Retina XDR display.',
-        category: 'Laptops',
-        stock: 9
-    },
-    {
-        id: 23,
-        name: 'Samsung Galaxy Book3',
-        price: 1299.0,
-        image: 'https://dummyimage.com/400x400/000/fff&text=Samsung+Galaxy+Book3',
-        description: 'High-performance Windows laptop with a stunning AMOLED display.',
-        category: 'Laptops',
-        stock: 14
-    },
-    {
-        id: 24,
-        name: 'Huawei MateBook X',
-        price: 1399.0,
-        image: 'https://dummyimage.com/400x400/000/fff&text=Huawei+MateBook+X',
-        description: 'Premium laptop with a lightweight design and a razor-thin bezel display.',
-        category: 'Laptops',
-        stock: 10
-    },
+
     {
         id: 25,
         name: 'Gigabyte Aero 17',
@@ -449,14 +280,5 @@ export const products = [
         category: 'iPhones',
         stock: 12
     },
-    {
-        id: 51,
-        name: 'iPhone 17 Pro Max',
-        price: 1499.99,
-        image: '/iphone17promax.jpg',
-        description: 'Flagship iPhone with the largest screen, best battery life, and elite camera.',
-        category: 'iPhones',
-        stock: 10
-    }
 ];
 //# sourceMappingURL=products.js.map
