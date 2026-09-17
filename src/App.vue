@@ -40,7 +40,7 @@
     </main>
     <footer class="site-footer">
       <div class="footer-content">
-        <p>TechNova • Built with Vue 3, TypeScript, Pinia, and Vue Router.</p>
+
         <div class="footer-contact">
           <a href="mailto:SamgiAGM1207@gmail.com" class="contact-link">SamgiAGM1207@gmail.com</a>
           <div class="contact-divider">|</div>
