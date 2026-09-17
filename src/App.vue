@@ -1,11 +1,6 @@
 <template>
-  <div class="app-shell" :class="{ 'is-transitioning': isTransitioning }">
-    <!-- Anime Transition Overlay -->
-    <div class="anime-overlay" :class="{ 'active': isTransitioning }">
-      <div class="speed-lines"></div>
-      <div class="character-silhouette"></div>
-      <div class="transition-slash"></div>
-    </div>
+  <div class="app-shell">
+
 
     <header class="site-header">
       <div class="brand-container">
@@ -62,31 +57,16 @@
 </template>
 
 <script setup lang="ts">
-import { RouterLink, RouterView, useRoute } from 'vue-router'
-import { ref, onMounted, watch } from 'vue'
+import { RouterLink, RouterView } from 'vue-router'
+import { ref, onMounted } from 'vue'
 import { useAuthStore } from './stores/auth'
 
 const auth = useAuthStore()
-const route = useRoute()
+
 const logout = () => auth.logout()
 
 const theme = ref<'dark' | 'light'>('dark')
-const isTransitioning = ref(false)
 const isBursting = ref(false)
-
-const startAnimeTransition = () => {
-  isTransitioning.value = true
-}
-
-const endAnimeTransition = () => {
-  // Wait for the entrance animation to finish before unlocking UI
-  setTimeout(() => {
-    isTransitioning.value = false
-  }, 600)
-}
-
-
-
 const triggerLogoBurst = () => {
   if (isBursting.value) return
   isBursting.value = true

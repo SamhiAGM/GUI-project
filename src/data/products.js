@@ -2,7 +2,7 @@ export const products = [
     {
         id: 1,
         name: 'Aurora Wireless Headphones',
-        price: 129.99,
+        price: 182500,
         image: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=800&q=80',
         description: 'Comfortable noise-cancelling headphones with premium sound and long battery life.',
         category: 'Audio',
@@ -11,7 +11,7 @@ export const products = [
     {
         id: 2,
         name: 'Luna Smart Watch',
-        price: 199.99,
+        price: 200000,
         image: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=800&q=80',
         description: 'Track health, messages, and activity with a sleek touchscreen smartwatch.',
         category: 'Wearables',
@@ -20,7 +20,7 @@ export const products = [
     {
         id: 3,
         name: 'Nova Laptop Backpack',
-        price: 79.95,
+        price: 170000,
         image: 'https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=800&q=80',
         description: 'Durable, water-resistant backpack with padded laptop sleeve and smart pockets.',
         category: 'Accessories',
@@ -29,28 +29,26 @@ export const products = [
     {
         id: 4,
         name: 'Solstice Desk Lamp',
-        price: 54.5,
-        image: 'https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=800&q=80',
+        price: 164000,
+        image: 'https://images.unsplash.com/photo-1534073828943-f801091bb270?auto=format&fit=crop&w=800&q=80',
         description: 'Minimal LED desk lamp with adjustable brightness and warm color modes.',
         category: 'Home',
         stock: 40
     },
-
     {
         id: 6,
         name: 'Nova 50W Portable Charger',
-        price: 39.99,
-        image: 'https://images.unsplash.com/photo-1609091839311-d5365f9ff1c5?auto=format&fit=crop&w=800&q=80',
+        price: 160000,
+        image: 'https://images.unsplash.com/photo-1610492421953-b33c04295ee3?auto=format&fit=crop&w=800&q=80',
         description: 'Fast charging power bank for phones, tablets, and USB-C devices.',
         category: 'Power',
         stock: 50
     },
-
     {
         id: 25,
         name: 'Gigabyte Aero 17',
-        price: 2199.0,
-        image: 'https://images.unsplash.com/photo-1625842268584-8f3296236761?auto=format&fit=crop&w=800&q=80',
+        price: 700000,
+        image: 'https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?auto=format&fit=crop&w=800&q=80',
         description: 'Creator laptop with a large 17-inch 4K display and high-powered graphics.',
         category: 'Laptops',
         stock: 6
@@ -58,8 +56,8 @@ export const products = [
     {
         id: 26,
         name: 'Surface Laptop 5',
-        price: 1299.0,
-        image: 'https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?auto=format&fit=crop&w=800&q=80',
+        price: 475000,
+        image: 'https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=800&q=80',
         description: 'Sleek Microsoft laptop with a PixelSense touchscreen and premium finish.',
         category: 'Laptops',
         stock: 17
@@ -67,8 +65,8 @@ export const products = [
     {
         id: 27,
         name: 'iPhone 11',
-        price: 499.99,
-        image: 'https://pngimg.com/uploads/iphone_11/iphone_11_PNG20.png',
+        price: 150000,
+        image: '/images/products/iphone-11.png',
         description: 'Classic iPhone with a dual-camera system and reliable performance.',
         category: 'iPhones',
         stock: 20
@@ -76,8 +74,8 @@ export const products = [
     {
         id: 28,
         name: 'iPhone 11 Pro',
-        price: 749.99,
-        image: 'https://pngimg.com/uploads/iphone_11/iphone_11_PNG38.png',
+        price: 156500,
+        image: '/images/products/iphone-11-pro.jpg',
         description: 'Pro-level iPhone with a triple-camera system and bright OLED display.',
         category: 'iPhones',
         stock: 18
@@ -85,8 +83,8 @@ export const products = [
     {
         id: 29,
         name: 'iPhone 11 Pro Max',
-        price: 849.99,
-        image: 'https://pngimg.com/uploads/iphone_11/iphone_11_PNG25.png',
+        price: 162500,
+        image: '/images/products/iphone-11-pro-max.jpg',
         description: 'Large-screen iPhone with excellent battery life and premium camera features.',
         category: 'iPhones',
         stock: 15
@@ -94,8 +92,8 @@ export const products = [
     {
         id: 30,
         name: 'iPhone 12',
-        price: 599.99,
-        image: 'https://pngimg.com/uploads/iphone_12/iphone_12_PNG19.png',
+        price: 169000,
+        image: '/images/products/iphone-12.jpg',
         description: 'Modern iPhone with 5G support and a gorgeous Super Retina XDR display.',
         category: 'iPhones',
         stock: 21
@@ -103,8 +101,8 @@ export const products = [
     {
         id: 31,
         name: 'iPhone 12 Mini',
-        price: 549.99,
-        image: 'https://pngimg.com/uploads/iphone_12/iphone_12_PNG3.png',
+        price: 175000,
+        image: '/images/products/iphone-12.jpg',
         description: 'Compact iPhone with powerful performance and easy one-handed use.',
         category: 'iPhones',
         stock: 18
@@ -112,8 +110,8 @@ export const products = [
     {
         id: 32,
         name: 'iPhone 12 Pro',
-        price: 999.99,
-        image: 'https://pngimg.com/uploads/iphone_12/iphone_12_PNG23.png',
+        price: 181500,
+        image: '/images/products/iphone-12-pro.jpg',
         description: 'Advanced iPhone with a pro camera system and stainless steel finish.',
         category: 'iPhones',
         stock: 16
@@ -121,8 +119,8 @@ export const products = [
     {
         id: 33,
         name: 'iPhone 12 Pro Max',
-        price: 1099.99,
-        image: 'https://pngimg.com/uploads/iphone_12/iphone_12_PNG36.png',
+        price: 187500,
+        image: '/images/products/iphone-12-pro-max.jpg',
         description: 'Large-screen premium iPhone with outstanding battery life and camera.',
         category: 'iPhones',
         stock: 14
@@ -130,8 +128,8 @@ export const products = [
     {
         id: 34,
         name: 'iPhone 13',
-        price: 699.99,
-        image: 'https://pngimg.com/uploads/iphone_13/iphone_13_PNG28.png',
+        price: 194000,
+        image: '/images/products/iphone-13.jpg',
         description: 'Reliable iPhone with improved battery life and cinematic camera mode.',
         category: 'iPhones',
         stock: 22
@@ -139,8 +137,8 @@ export const products = [
     {
         id: 35,
         name: 'iPhone 13 Mini',
-        price: 649.99,
-        image: 'https://pngimg.com/uploads/iphone_13/iphone_13_PNG9.png',
+        price: 200000,
+        image: '/images/products/iphone-13.jpg',
         description: 'Small form-factor iPhone with powerful internals and compact design.',
         category: 'iPhones',
         stock: 19
@@ -148,8 +146,8 @@ export const products = [
     {
         id: 36,
         name: 'iPhone 13 Pro',
-        price: 999.99,
-        image: 'https://pngimg.com/uploads/iphone_13/iphone_13_PNG32.png',
+        price: 206500,
+        image: '/images/products/iphone-13-pro.jpg',
         description: 'Pro model featuring a triple-camera system and ProMotion display.',
         category: 'iPhones',
         stock: 16
@@ -157,8 +155,8 @@ export const products = [
     {
         id: 37,
         name: 'iPhone 13 Pro Max',
-        price: 1099.99,
-        image: 'https://pngimg.com/uploads/iphone_13/iphone_13_PNG32.png',
+        price: 212500,
+        image: '/images/products/iphone-13-pro-max.jpg',
         description: 'Large-screen iPhone with the best camera system and long-lasting battery.',
         category: 'iPhones',
         stock: 13
@@ -166,8 +164,8 @@ export const products = [
     {
         id: 38,
         name: 'iPhone 14',
-        price: 799.99,
-        image: 'https://images.unsplash.com/photo-1663499482523-1c0c1bae4ce1?auto=format&fit=crop&w=800&q=80',
+        price: 219000,
+        image: '/images/products/iphone-14.jpg',
         description: 'Latest generation iPhone with dynamic island and advanced safety features.',
         category: 'iPhones',
         stock: 20
@@ -175,8 +173,8 @@ export const products = [
     {
         id: 39,
         name: 'iPhone 14 Plus',
-        price: 899.99,
-        image: 'https://d1eh9yux7w8iql.cloudfront.net/product_images/781111_49a2a408-01fb-4921-b9c6-cb7ef2486e06.jpg',
+        price: 225000,
+        image: '/images/products/iphone-14.jpg',
         description: 'Bigger iPhone with a large display and all the latest features.',
         category: 'iPhones',
         stock: 18
@@ -184,8 +182,8 @@ export const products = [
     {
         id: 40,
         name: 'iPhone 14 Pro',
-        price: 1099.99,
-        image: 'https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-14-pro-finish-select-202209-6-7inch-deeppurple?wid=2560&hei=1440&fmt=jpeg&qlt=95&.v=1663703841896',
+        price: 231500,
+        image: '/images/products/iphone-14-pro.jpg',
         description: 'Pro iPhone with Dynamic Island, ProMotion display, and advanced cameras.',
         category: 'iPhones',
         stock: 15
@@ -193,8 +191,8 @@ export const products = [
     {
         id: 41,
         name: 'iPhone 14 Pro Max',
-        price: 1199.99,
-        image: 'https://images.unsplash.com/photo-1678685888221-cda773a3dcdb?auto=format&fit=crop&w=800&q=80',
+        price: 237500,
+        image: '/images/products/iphone-14-pro-max.jpg',
         description: 'Top-tier large-screen iPhone with premium camera and battery life.',
         category: 'iPhones',
         stock: 12
@@ -202,8 +200,8 @@ export const products = [
     {
         id: 42,
         name: 'iPhone 15',
-        price: 899.99,
-        image: 'https://images.unsplash.com/photo-1695048133142-1a20484d2569?auto=format&fit=crop&w=800&q=80',
+        price: 244000,
+        image: '/images/products/iphone-15.jpg',
         description: 'Newest iPhone with advanced performance and versatile camera upgrades.',
         category: 'iPhones',
         stock: 22
@@ -211,8 +209,8 @@ export const products = [
     {
         id: 43,
         name: 'iPhone 15 Plus',
-        price: 999.99,
-        image: 'https://d1eh9yux7w8iql.cloudfront.net/product_images/781111_49a2a408-01fb-4921-b9c6-cb7ef2486e06.jpg',
+        price: 250000,
+        image: '/images/products/iphone-15.jpg',
         description: 'Large iPhone with long battery life and a bright display.',
         category: 'iPhones',
         stock: 18
@@ -220,8 +218,8 @@ export const products = [
     {
         id: 44,
         name: 'iPhone 15 Pro',
-        price: 1199.99,
-        image: 'https://static1.anpoimages.com/wordpress/wp-content/uploads/2023/09/iphone-15-pro-max.jpg',
+        price: 256500,
+        image: '/images/products/iphone-15-pro.jpg',
         description: 'Professional-level iPhone with a titanium frame and enhanced camera system.',
         category: 'iPhones',
         stock: 14
@@ -229,8 +227,8 @@ export const products = [
     {
         id: 45,
         name: 'iPhone 15 Pro Max',
-        price: 1299.99,
-        image: 'https://static1.anpoimages.com/wordpress/wp-content/uploads/2023/09/iphone-15-pro-max.jpg',
+        price: 262500,
+        image: '/images/products/iphone-15-pro-max.jpg',
         description: 'Top flagship iPhone with the largest display and best camera performance.',
         category: 'iPhones',
         stock: 12
@@ -238,8 +236,8 @@ export const products = [
     {
         id: 46,
         name: 'iPhone 16',
-        price: 999.99,
-        image: 'https://www.apple.com/newsroom/images/2024/09/apple-debuts-iphone-16-pro-and-iphone-16-pro-max/article/Apple-iPhone-16-Pro-hero-geo-240909_inline.jpg.large_2x.jpg',
+        price: 269000,
+        image: '/images/products/iphone-16.jpg',
         description: 'Advanced iPhone with the latest chipset and upgraded camera capabilities.',
         category: 'iPhones',
         stock: 20
@@ -247,8 +245,8 @@ export const products = [
     {
         id: 47,
         name: 'iPhone 16 Pro',
-        price: 1299.99,
-        image: 'https://static1.howtogeekimages.com/wordpress/wp-content/uploads/2024/09/iphone-16-pro.png',
+        price: 275000,
+        image: '/images/products/iphone-16-pro.jpg',
         description: 'Cutting-edge iPhone designed for power users with pro photography features.',
         category: 'iPhones',
         stock: 14
@@ -256,8 +254,8 @@ export const products = [
     {
         id: 48,
         name: 'iPhone 16 Pro Max',
-        price: 1399.99,
-        image: 'https://static1.howtogeekimages.com/wordpress/wp-content/uploads/2024/09/iphone-16-pro.png',
+        price: 281500,
+        image: '/images/products/iphone-16-pro-max.jpg',
         description: 'Ultimate large-screen iPhone with the longest battery life and top performance.',
         category: 'iPhones',
         stock: 10
@@ -265,8 +263,8 @@ export const products = [
     {
         id: 49,
         name: 'iPhone 17',
-        price: 1099.99,
-        image: 'https://www.mobiledokan.com/media/apple-iphone-17-teal-official-image.webp',
+        price: 287500,
+        image: '/images/products/iphone-17.jpg',
         description: 'Latest generation iPhone with premium design and improved battery life.',
         category: 'iPhones',
         stock: 20
@@ -274,8 +272,8 @@ export const products = [
     {
         id: 50,
         name: 'iPhone 17 Pro',
-        price: 1399.99,
-        image: 'https://images.unsplash.com/photo-1592750475338-74b7b21085ab?auto=format&fit=crop&w=800&q=80',
+        price: 294000,
+        image: '/images/products/iphone-17-pro.jpg',
         description: 'High-end iPhone with next-level camera and pro-grade performance.',
         category: 'iPhones',
         stock: 12
