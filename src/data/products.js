@@ -27,24 +27,6 @@ export const products = [
         stock: 35
     },
     {
-        id: 4,
-        name: 'Solstice Desk Lamp',
-        price: 164000,
-        image: 'https://images.unsplash.com/photo-1534073828943-f801091bb270?auto=format&fit=crop&w=800&q=80',
-        description: 'Minimal LED desk lamp with adjustable brightness and warm color modes.',
-        category: 'Home',
-        stock: 40
-    },
-    {
-        id: 6,
-        name: 'Nova 50W Portable Charger',
-        price: 160000,
-        image: 'https://images.unsplash.com/photo-1610492421953-b33c04295ee3?auto=format&fit=crop&w=800&q=80',
-        description: 'Fast charging power bank for phones, tablets, and USB-C devices.',
-        category: 'Power',
-        stock: 50
-    },
-    {
         id: 25,
         name: 'Gigabyte Aero 17',
         price: 700000,
