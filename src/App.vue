@@ -101,13 +101,7 @@ const applyTheme = (value: 'dark' | 'light') => {
   document.documentElement.classList.toggle('dark', value === 'dark')
   localStorage.setItem('theme', value)
   
-  // Trigger transition animation
-  isTransitioning.value = true
-  document.documentElement.classList.add('theme-transitioning')
-  setTimeout(() => {
-    isTransitioning.value = false
-    document.documentElement.classList.remove('theme-transitioning')
-  }, 800)
+
 }
 
 const toggleTheme = () => applyTheme(theme.value === 'dark' ? 'light' : 'dark')

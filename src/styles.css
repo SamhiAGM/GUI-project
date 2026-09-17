@@ -241,12 +241,10 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: transform 0.5s var(--transition-slow);
   cursor: pointer;
 }
 
 .brand-container:hover .logo-wrapper {
-  transform: scale(1.1) rotate(180deg);
 }
 
 .brand-logo {
@@ -256,17 +254,14 @@ button {
 }
 
 .logo-ring {
-  animation: rotate-anime 4s linear infinite;
   transform-origin: center;
 }
 
 .logo-star {
-  animation: pulse-anime 2s ease-in-out infinite;
   transform-origin: center;
 }
 
 .logo-core {
-  animation: glow-pulse 2s ease-in-out infinite;
 }
 
 @keyframes rotate-anime {
